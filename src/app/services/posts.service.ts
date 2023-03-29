@@ -22,13 +22,14 @@ export class PostsService {
     return this.httpClient.get<Post[]>('/api/posts');
   }
 
-  getSinglePost(id: number): Observable<Post[]> {
-    return this.route.paramMap.pipe(
-      switchMap((params) => {
-        const postId = Number(params.get('id'));
-        return this.httpClient.get<Post[]>(`/api/posts/${postId}`);
-      }),
-    );
+  getSinglePost(id: string) {
+    // return this.route.paramMap.pipe(
+    //   switchMap((params) => {
+    //     const postId = String(params.get('id'));
+    //     return this.httpClient.get<Post[]>(`/api/posts/${postId}`);
+    //   }),
+    // );
+    return this.httpClient.get<Post>('/api/posts/${id}');
   }
 
   getPosts() {
