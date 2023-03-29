@@ -1,0 +1,21 @@
+<fieldset>
+  <legend>Filter Posts</legend>
+  <form [formGroup]="filterForm" (submit)="submit()">
+    <label for="filter">Title to filter by</label>
+    <input type="text" name="filter" id="filter" formControlName="filter" />
+    <button>Filter</button>
+  </form>
+</fieldset>
+
+<!-- <div>
+  <form [formGroup]="searchForm" (submit)="onSubmit()">
+    <input
+      type="text"
+      name="title"
+      id="title"
+      formControlName="title"
+      placeholder="Search by title"
+    />
+    <button>Search</button>
+  </form>
+</div> -->
