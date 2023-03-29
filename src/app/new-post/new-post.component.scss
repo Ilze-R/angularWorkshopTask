@@ -1,0 +1,31 @@
+.form-container {
+  display: flex;
+  flex-direction: column;
+  margin-left: 100px;
+  input,
+  textarea {
+    border: solid #1d1d35 1px;
+    padding: 7px 20px;
+    font-size: var(--font-size);
+    font-weight: var(--font-weght);
+    margin-top: 5px;
+  }
+  label {
+    letter-spacing: 0.7px;
+    font-weight: 200;
+    font-size: 15px;
+    color: #9eadbd;
+  }
+  .btn {
+    display: flex;
+    gap: 8px;
+    button {
+      padding: 7px 20px;
+      font-size: 13px;
+      border: solid #1d1d35 1px;
+      font-weight: 200;
+      background-color: #efedff;
+      text-transform: uppercase;
+    }
+  }
+}

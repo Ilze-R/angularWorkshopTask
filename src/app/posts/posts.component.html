@@ -1,12 +1,12 @@
 <app-filter-posts (filterChange)="filterPosts($event)"></app-filter-posts>
 <div>
-  <h1>Posts:</h1>
+  <h2>Posts:</h2>
   <ul
     *ngFor="let posts of loadedPosts$ | async"
     routerLink="/posts/{{ posts.id }}"
   >
     <li>{{ posts.author }}</li>
-    <li>{{ posts.title }}</li>
+    <li class="title">{{ posts.title }}</li>
     <li>{{ posts.content }}</li>
   </ul>
 </div>

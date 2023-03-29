@@ -1,0 +1,32 @@
+:root {
+  --font-weght: 300;
+  --font-size: 15px;
+}
+
+.filter-wrap {
+  .container {
+    display: flex;
+    gap: 5px;
+    align-items: center;
+    .label {
+      letter-spacing: 0.7px;
+      font-weight: 400;
+      font-size: var(--font-size);
+      font-weight: var(--font-weght);
+      text-transform: uppercase;
+    }
+    .input {
+      border: solid #1d1d35 1px;
+      padding: 7px 20px;
+      font-size: var(--font-size);
+      font-weight: var(--font-weght);
+    }
+    .btn {
+      padding: 7px 20px;
+      font-size: var(--font-size);
+      border: solid #1d1d35 1px;
+      font-weight: var(--font-weght);
+      background-color: #efedff;
+    }
+  }
+}

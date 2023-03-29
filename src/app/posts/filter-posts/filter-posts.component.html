@@ -1,5 +1,13 @@
-<form [formGroup]="filterForm" (submit)="submit()">
-  <label for="filter">Filter by title: </label>
-  <input type="text" name="filter" id="filter" formControlName="filter" />
-  <button>Search</button>
-</form>
+<div class="filter-wrap">
+  <form [formGroup]="filterForm" (submit)="submit()" class="container">
+    <label class="label" for="filter">Filter by title: </label>
+    <input
+      class="input"
+      type="text"
+      name="filter"
+      id="filter"
+      formControlName="filter"
+    />
+    <button class="btn">Search</button>
+  </form>
+</div>
